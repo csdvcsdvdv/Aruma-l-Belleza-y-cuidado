@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Aruma Blog - Consejos, tendencias y recomendaciones de belleza."
+    >
+
+    <link rel="stylesheet" href="estiloproducto.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+    <link rel="icon" type="image/x-icon" href="images (2).png">
+
+    <title>Aruma | Blog de Belleza</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         BOTÓN HAMBURGUESA
+    ====================================================== -->
+
+    <button
+        class="hamburger"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+    >
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+
+    <!-- =====================================================
+         MENÚ HAMBURGUESA
+    ====================================================== -->
+
+    <div class="menu">
+
+        <a href="index.html">
+
+            <i class="fa-solid fa-house"></i>
+
+            Inicio
+
+        </a>
+
+
+        <a href="somos.html">
+
+            <i class="fa-solid fa-heart"></i>
+
+            Somos
+
+        </a>
+
+
+        <a href="producto.html">
+
+            <i class="fa-solid fa-sparkles"></i>
+
+            Blog
+
+        </a>
+
+
+        <a href="contacto.html">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            Contacto
+
+        </a>
+
+
+        <a href="formularioaruma.html">
+
+            <i class="fa-solid fa-clipboard-list"></i>
+
+            Formulario
+
+        </a>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         NAVEGACIÓN
+    ====================================================== -->
+
+    <nav>
+
+
+        <!-- LOGO -->
+
+        <a
+            href="index.html"
+            class="logo"
+            aria-label="Ir al inicio de Aruma"
+        >
+
+            <img
+                src="https://images.teamtailor-cdn.com/images/s3/teamtailor-na-maroon/logotype-v3/image_uploads/a67b42d5-8dd8-434e-a010-a06df06e7201/original.png"
+                alt="Logo Aruma"
+            >
+
+        </a>
+
+
+
+        <!-- ENLACES -->
+
+        <div class="enlaces">
+
+            <a href="index.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                Inicio
+
+            </a>
+
+
+            <a href="somos.html">
+
+                <i class="fa-solid fa-heart"></i>
+
+                Somos
+
+            </a>
+
+
+            <a
+                href="producto.html"
+                class="activo"
+            >
+
+                <i class="fa-solid fa-sparkles"></i>
+
+                Blog
+
+            </a>
+
+
+            <a href="contacto.html">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                Contacto
+
+            </a>
+
+
+            <a href="formularioaruma.html">
+
+                <i class="fa-solid fa-clipboard-list"></i>
+
+                Formulario
+
+            </a>
+
+        </div>
+
+
+
+        <!-- INGRESO -->
+
+        <button
+            type="button"
+            onclick="mostrarLogin()"
+            class="btn-ingreso"
+        >
+
+            <i class="fa-regular fa-user"></i>
+
+            Ingreso
+
+        </button>
+
+    </nav>
+
+
+
+    <!-- =====================================================
+         HERO BLOG
+    ====================================================== -->
+
+    <section class="blog-hero">
+
+        <div class="blog-hero-contenido">
+
+
+            <a
+                href="#articulos"
+                class="blog-hero-btn"
+            >
+
+                Explorar artículos
+
+                <i class="fa-solid fa-arrow-down"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="blog-hero-imagen">
+
+            <img
+                src="https://aruma.vtexassets.com/assets/vtex.file-manager-graphql/images/658f7557-c8e0-4914-9936-814cdf4eb9ed___d8e9d8d997a932ff8b989e712b293618.jpeg"
+                alt="Belleza y maquillaje Aruma"
+            >
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CATEGORÍAS
+    ====================================================== -->
+
+    <section class="categorias-blog">
+
+        <div class="titulo-blog">
+
+            <span>
+
+                DESCUBRE
+
+            </span>
+
+            <h2>
+
+                Explora por categoría
+
+            </h2>
+
+            <p>
+
+                Encuentra consejos pensados para tus necesidades
+                de belleza.
+
+            </p>
+
+        </div>
+
+
+        <div class="categorias-grid">
+
+
+            <a
+                href="#maquillaje"
+                class="categoria-card"
+            >
+
+                <div class="categoria-icono">
+
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                </div>
+
+                <h3>
+
+                    Maquillaje
+
+                </h3>
+
+                <p>
+
+                    Tips y tendencias para crear tus looks favoritos.
+
+                </p>
+
+            </a>
+
+
+
+            <a
+                href="#piel"
+                class="categoria-card"
+            >
+
+                <div class="categoria-icono">
+
+                    <i class="fa-solid fa-face-smile"></i>
+
+                </div>
+
+                <h3>
+
+                    Cuidado de la piel
+
+                </h3>
+
+                <p>
+
+                    Consejos para mantener una rutina de cuidado.
+
+                </p>
+
+            </a>
+
+
+
+            <a
+                href="#labios"
+                class="categoria-card"
+            >
+
+                <div class="categoria-icono">
+
+                    <i class="fa-solid fa-kiss-wink-heart"></i>
+
+                </div>
+
+                <h3>
+
+                    Labios
+
+                </h3>
+
+                <p>
+
+                    Descubre cómo cuidar y resaltar tus labios.
+
+                </p>
+
+            </a>
+
+
+
+            <a
+                href="#tendencias"
+                class="categoria-card"
+            >
+
+                <div class="categoria-icono">
+
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+                <h3>
+
+                    Tendencias
+
+                </h3>
+
+                <p>
+
+                    Conoce las novedades que están marcando tendencia.
+
+                </p>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ARTÍCULOS DESTACADOS
+    ====================================================== -->
+
+    <section
+        class="articulos-blog"
+        id="articulos"
+    >
+
+        <div class="titulo-blog">
+
+            <span>
+
+                NUESTRO BLOG
+
+            </span>
+
+            <h2>
+
+                Consejos para sentirte increíble
+
+            </h2>
+
+            <p>
+
+                Ideas sencillas para incorporar la belleza
+                y el cuidado personal a tu día.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="articulos-grid">
+
+
+            <!-- ARTÍCULO 1 -->
+
+            <article class="articulo-card">
+
+                <div class="articulo-imagen">
+
+                    <img
+                        src="https://scontent.flim11-1.fna.fbcdn.net/v/t51.82787-15/680822153_18357348748234772_5664792356178160588_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEsklTNBL4wTEpbTlJAdgZEEoVW7lMAEnEShVbuUwAScepS0v7lNarCvgqEAdOiNLP28X3s1ZypvfCn02byv0fM&_nc_ohc=C31y5N7TIA8Q7kNvwFcK_FH&_nc_oc=AdoYhsgDMTDDa9f0Z5tk43wmZcWpEM4m7892oJpvo4k09QTIK4xpMnExsQBgn8ukwrXei-qeAgt2WcD29GfQY0V1&_nc_zt=23&_nc_ht=scontent.flim11-1.fna&_nc_gid=w1wBop3AsO6oypmpjSlEwA&_nc_ss=7b2a8&oh=00_AQOua1xhMyIIvxRmC6gg3XA2KFSot0xAVFzcprTpHpJdMA&oe=6AC4FBE4"
+                        alt="Productos de maquillaje"
+                    >
+
+                    <span class="articulo-categoria">
+
+                        MAQUILLAJE
+
+                    </span>
+
+                </div>
+
+
+                <div class="articulo-contenido">
+
+                    <span class="articulo-fecha">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        Consejos de belleza
+
+                    </span>
+
+
+                    <h3>
+
+                        Cómo elegir el labial ideal para ti
+
+                    </h3>
+
+
+                    <p>
+
+                        Descubre algunos consejos para elegir
+                        tonos y acabados que puedas incorporar
+                        fácilmente a tus looks.
+
+                    </p>
+
+
+                    <a
+                        href="#"
+                        class="leer-articulo"
+                    >
+
+                        Leer artículo
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ARTÍCULO 2 -->
+
+            <article class="articulo-card">
+
+                <div class="articulo-imagen">
+
+                    <img
+                        src="https://scontent.flim11-1.fna.fbcdn.net/v/t51.82787-15/656051129_18352563151234772_1697159400772300304_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHguuoXo7RStQAX-w8PiqH_Scby-v2m14pJxvL6_abXilXnqYT28v4Nzt9ISbIfb_C2jTPdjAAY8_dss5o5HNfq&_nc_ohc=ZnYigVUdsjwQ7kNvwFMt2Sp&_nc_oc=AdogSbou_XTy6nn9rDhRG_I3MACPicLGagNNmsj3YQECGyRer7_RSIWWO4p275TbHGed0wcpZYsIz7f2eUOvgD2o&_nc_zt=23&_nc_ht=scontent.flim11-1.fna&_nc_gid=RAj3o6jPr2UnyGbzJMyD6A&_nc_ss=7b2a8&oh=00_AQMhs0KCNnOB2J8gdAerOw97gatFvtP0wrtCRWX0ypbhZw&oe=6AC50731"
+                        alt="Rutina de maquillaje"
+                    >
+
+                    <span class="articulo-categoria">
+
+                        TIPS
+
+                    </span>
+
+                </div>
+
+
+                <div class="articulo-contenido">
+
+                    <span class="articulo-fecha">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        Consejos de belleza
+
+                    </span>
+
+
+                    <h3>
+
+                        5 tips para lograr un maquillaje duradero
+
+                    </h3>
+
+
+                    <p>
+
+                        Conoce algunos pasos sencillos que pueden
+                        ayudarte a conseguir un maquillaje cómodo
+                        durante el día.
+
+                    </p>
+
+
+                    <a
+                        href="#"
+                        class="leer-articulo"
+                    >
+
+                        Leer artículo
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ARTÍCULO 3 -->
+
+            <article class="articulo-card">
+
+                <div class="articulo-imagen">
+
+                    <img
+                        src="https://scontent.flim11-1.fna.fbcdn.net/v/t51.82787-15/645799535_18348955846234772_8407540438523371822_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeG5VHwrAzzQIz_ML_5r44QcV4JsqplkrotXgmyqmWSui3qoqIH4vqg-1qkODrLBpPUpcbpRnosmHb85Swg_K069&_nc_ohc=LBIQE90S4_oQ7kNvwGwLEwe&_nc_oc=AdrG9EDY81Cpib8cIl58mytL0GIuUDejG1gz4YiuPtO4ZmqaaqdKEI_aQcRvFnaoOHDjBvprvhcY705D8OtjJ4nT&_nc_zt=23&_nc_ht=scontent.flim11-1.fna&_nc_gid=Y4_FH1u9qxeLULQ0dCEd5A&_nc_ss=7b2a8&oh=00_AQPz5VNR9fAfmuXBqc_KMt95JXVpoKhbgwuelYWmkcEAMw&oe=6AC4E373"
+                        alt="Cuidado de la piel"
+                    >
+
+                    <span class="articulo-categoria">
+
+                        CUIDADO
+
+                    </span>
+
+                </div>
+
+
+                <div class="articulo-contenido">
+
+                    <span class="articulo-fecha">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        Cuidado personal
+
+                    </span>
+
+
+                    <h3>
+
+                        Una rutina básica para cuidar tu piel
+
+                    </h3>
+
+
+                    <p>
+
+                        Conoce los pasos básicos para crear una rutina
+                        de cuidado de la piel sencilla y práctica.
+
+                    </p>
+
+
+                    <a
+                        href="#"
+                        class="leer-articulo"
+                    >
+
+                        Leer artículo
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ARTÍCULO 4 -->
+
+            <article class="articulo-card">
+
+                <div class="articulo-imagen">
+
+                    <img
+                        src="https://scontent.flim11-1.fna.fbcdn.net/v/t51.82787-15/686971629_18359060800234772_8255106603812531317_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEeB5r7J-NwOpSy8L4lYRxy6tRec7yw0dPq1F5zvLDR0z2PYPwgqUTszAV_Kugi0IlAxqnh2466XURSnht9VLBI&_nc_ohc=o5PvYtaY0bUQ7kNvwGOIfmG&_nc_oc=AdoSErBYqoM0XDqG8ngoh0jgSursVrrOjDNKvb317rgEs8EguaY1caar5vGCKZ-e-01WBfmBF5wBvKbul4a2npp9&_nc_zt=23&_nc_ht=scontent.flim11-1.fna&_nc_gid=qycFzpK5llgbvoIip7hP4w&_nc_ss=7b2a8&oh=00_AQOVpsbnRO-P9Sai_KlsbQxc-uYSOyqg4EqZ5ZBjVyaNWQ&oe=6AC4FCF4"
+                        alt="Labiales de colores"
+                    >
+
+                    <span class="articulo-categoria">
+
+                        LABIOS
+
+                    </span>
+
+                </div>
+
+
+                <div class="articulo-contenido">
+
+                    <span class="articulo-fecha">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        Tendencias
+
+                    </span>
+
+
+                    <h3>
+
+                        Tonos de labios para cada ocasión
+
+                    </h3>
+
+
+                    <p>
+
+                        Desde tonos naturales hasta colores más
+                        intensos, encuentra ideas para diferentes
+                        momentos.
+
+                    </p>
+
+
+                    <a
+                        href="#"
+                        class="leer-articulo"
+                    >
+
+                        Leer artículo
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ARTÍCULO 5 -->
+
+            <article class="articulo-card">
+
+                <div class="articulo-imagen">
+
+                    <img
+                        src="https://scontent.flim11-1.fna.fbcdn.net/v/t51.75761-15/473678498_18297460519234772_4930314442377671509_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s1080x1080&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHefoAnsxZSQzCkeKm2yeKYcbftXXnJkwRxt-1decmTBKwgk22dIeHrcx9X0JmcsBLCwhHzdOiOMiT6tqNL8eC8&_nc_ohc=OonUuAzgLC8Q7kNvwFSkwJv&_nc_oc=Adpsb6AjNIlcalAKUKam4SY5jVeI0RBV7abybk28OQ5Q1PMMlOaWX7bb1NO85sA_hRYXzyUz_Fa8FEIfcmlpX-3J&_nc_zt=23&_nc_ht=scontent.flim11-1.fna&_nc_gid=FsoK6Y28DOZgvtTWBt2jnQ&_nc_ss=7b2a8&oh=00_AQNoLRV0FY7CCRO7SHgdujvl3rW1N2ImZnm85BcmLKOa1A&oe=6AC4EA17"
+                        alt="Productos para el cuidado personal"
+                    >
+
+                    <span class="articulo-categoria">
+
+                        CUIDADO
+
+                    </span>
+
+                </div>
+
+
+                <div class="articulo-contenido">
+
+                    <span class="articulo-fecha">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        Recomendaciones
+
+                    </span>
+
+
+                    <h3>
+
+                        Pequeños hábitos para sentirte mejor
+
+                    </h3>
+
+
+                    <p>
+
+                        Incorporar pequeños momentos de cuidado
+                        personal puede ayudarte a disfrutar más
+                        tu rutina.
+
+                    </p>
+
+
+                    <a
+                        href="#"
+                        class="leer-articulo"
+                    >
+
+                        Leer artículo
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ARTÍCULO 6 -->
+
+            <article class="articulo-card">
+
+                <div class="articulo-imagen">
+
+                    <img
+                        src="https://scontent.flim11-1.fna.fbcdn.net/v/t39.99422-6/778296788_1715175346200725_4894847803441768559_n.png?stp=dst-jpg_tt6&cstp=mx1263x516&ctp=s1263x516&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeG07MLLjfb5zAbYdXg2yYJ_9cu51CwmO831y7nULCY7zdsk6KHJwROLFM8Fjrp4GenDTH0NWzJPyuXv4hcKWXTs&_nc_ohc=09CsCOgo2aQQ7kNvwEbmbej&_nc_oc=Adrhaz0wAG_lVsScIExRYGFwmpuBHfMQFYt4eJ1Z2chWXGizJhzLSinjMvCsn7N_OWv2RhYMBHbVvlMIY_r8JxFu&_nc_zt=14&_nc_ht=scontent.flim11-1.fna&_nc_gid=4pwF1FJHxSRcHtDpIyqZ3w&_nc_ss=7b2a8&oh=00_AQOGjWsyMHm26TlSO-9piQcpiKYsh5WmV3lppQ80Drg8Jg&oe=6AC50805"
+                        alt="Tendencias de belleza"
+                    >
+
+                    <span class="articulo-categoria">
+
+                        TENDENCIAS
+
+                    </span>
+
+                </div>
+
+
+                <div class="articulo-contenido">
+
+                    <span class="articulo-fecha">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        Beauty trends
+
+                    </span>
+
+
+                    <h3>
+
+                        Tendencias de belleza que puedes probar
+
+                    </h3>
+
+
+                    <p>
+
+                        Inspírate con diferentes estilos y descubre
+                        nuevas ideas para renovar tus looks.
+
+                    </p>
+
+
+                    <a
+                        href="#"
+                        class="leer-articulo"
+                    >
+
+                        Leer artículo
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <!-- INFORMACIÓN -->
+
+            <div class="footer-column">
+
+                <div class="footer-logo">
+
+                    <i class="fa-solid fa-sparkles"></i>
+
+                    ARUMA
+
+                </div>
+
+
+                <p class="footer-descripcion">
+
+                    Belleza, cuidado y productos
+                    para hacerte sentir increíble.
+
+                </p>
+
+
+                <h3>
+
+                    INFORMACIÓN
+
+                </h3>
+
+
+                <a href="somos.html">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    Nosotros
+
+                </a>
+
+
+                <a href="contacto.html">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    Contacto
+
+                </a>
+
+
+                <a href="producto.html">
+
+                    <i class="fa-solid fa-sparkles"></i>
+
+                    Blog
+
+                </a>
+
+            </div>
+
+
+
+            <!-- AYUDA -->
+
+            <div class="footer-column">
+
+                <h3>
+
+                    AYUDA
+
+                </h3>
+
+
+                <a href="#">
+
+                    <i class="fa-solid fa-truck"></i>
+
+                    Envíos
+
+                </a>
+
+
+                <a href="#">
+
+                    <i class="fa-solid fa-rotate-left"></i>
+
+                    Cambios y devoluciones
+
+                </a>
+
+
+                <a href="#">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    Términos y condiciones
+
+                </a>
+
+
+                <a href="#">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    Privacidad
+
+                </a>
+
+            </div>
+
+
+
+            <!-- REDES -->
+
+            <div class="footer-column">
+
+                <h3>
+
+                    SÍGUENOS
+
+                </h3>
+
+
+                <p class="footer-descripcion">
+
+                    Síguenos y descubre novedades,
+                    consejos y promociones.
+
+                </p>
+
+
+                <div class="social-grid-container">
+
+                    <a
+                        href="#"
+                        class="social-icon"
+                        aria-label="WhatsApp"
+                    >
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="social-icon"
+                        aria-label="Facebook"
+                    >
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="social-icon"
+                        aria-label="Instagram"
+                    >
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="social-icon"
+                        aria-label="TikTok"
+                    >
+
+                        <i class="fa-brands fa-tiktok"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="derechos">
+
+            <span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </span>
+
+
+            © 2026 Aruma.
+            Todos los derechos reservados.
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        /* MENÚ HAMBURGUESA */
+
+        const botonHamburger =
+            document.querySelector(".hamburger");
+
+        const menu =
+            document.querySelector(".menu");
+
+
+        if (
+            botonHamburger &&
+            menu
+        ) {
+
+            botonHamburger.addEventListener(
+                "click",
+                function() {
+
+                    const abierto =
+                        menu.classList.toggle("activo");
+
+                    botonHamburger.setAttribute(
+                        "aria-expanded",
+                        abierto
+                    );
+
+
+                    const icono =
+                        botonHamburger.querySelector("i");
+
+
+                    if (abierto) {
+
+                        icono.className =
+                            "fa-solid fa-xmark";
+
+                    } else {
+
+                        icono.className =
+                            "fa-solid fa-bars";
+
+                    }
+
+                }
+            );
+
+
+            document
+                .querySelectorAll(".menu a")
+                .forEach(
+                    function(enlace) {
+
+                        enlace.addEventListener(
+                            "click",
+                            function() {
+
+                                menu.classList.remove(
+                                    "activo"
+                                );
+
+                                botonHamburger.setAttribute(
+                                    "aria-expanded",
+                                    "false"
+                                );
+
+                                botonHamburger
+                                    .querySelector("i")
+                                    .className =
+                                    "fa-solid fa-bars";
+
+                            }
+                        );
+
+                    }
+                );
+
+        }
+
+
+
+        /* BOTÓN INGRESO */
+
+        function mostrarLogin() {
+
+            alert(
+                "Función de ingreso próximamente."
+            );
+
+        }
+
+
+
+        /* CERRAR MENÚ CON ESC */
+
+        document.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (
+                    event.key === "Escape"
+                ) {
+
+                    if (
+                        menu &&
+                        botonHamburger
+                    ) {
+
+                        menu.classList.remove(
+                            "activo"
+                        );
+
+                        botonHamburger.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+                        botonHamburger
+                            .querySelector("i")
+                            .className =
+                            "fa-solid fa-bars";
+
+                    }
+
+                }
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>

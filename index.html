@@ -1,0 +1,2041 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Aruma - Productos de belleza, maquillaje y cuidado personal."
+    >
+
+    <link rel="stylesheet" href="menuestilo2.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+    <link rel="icon" type="image/x-icon" href="images (2).png">
+
+    <title>Aruma | Belleza y cuidado personal</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         BOTÓN HAMBURGUESA
+    ====================================================== -->
+
+    <button
+        class="hamburger"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+    >
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+    <!-- =====================================================
+         MENÚ HAMBURGUESA
+    ====================================================== -->
+
+    <div class="menu">
+
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            Inicio
+        </a>
+
+        <a href="somos.html">
+            <i class="fa-solid fa-heart"></i>
+            Somos
+        </a>
+
+        <a href="producto.html">
+            <i class="fa-solid fa-sparkles"></i>
+            Blog
+        </a>
+
+        <a href="contacto.html">
+            <i class="fa-solid fa-envelope"></i>
+            Contacto
+        </a>
+
+        <a href="formularioaruma.html">
+            <i class="fa-solid fa-clipboard-list"></i>
+            Formulario
+        </a>
+
+    </div>
+
+
+    <!-- =====================================================
+         NAVEGACIÓN
+    ====================================================== -->
+
+    <nav>
+
+        <a
+            href="index.html"
+            class="logo"
+            aria-label="Ir al inicio de Aruma"
+        >
+
+            <img
+                src="https://images.teamtailor-cdn.com/images/s3/teamtailor-na-maroon/logotype-v3/image_uploads/a67b42d5-8dd8-434e-a010-a06df06e7201/original.png"
+                alt="Logo Aruma"
+            >
+
+        </a>
+
+
+        <div class="enlaces">
+
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Inicio
+            </a>
+
+            <a href="somos.html">
+                <i class="fa-solid fa-heart"></i>
+                Somos
+            </a>
+
+            <a href="producto.html">
+                <i class="fa-solid fa-sparkles"></i>
+                Blog
+            </a>
+
+            <a href="contacto.html">
+                <i class="fa-solid fa-envelope"></i>
+                Contacto
+            </a>
+
+            <a href="formularioaruma.html">
+                <i class="fa-solid fa-clipboard-list"></i>
+                Formulario
+            </a>
+
+        </div>
+
+
+        <button
+            type="button"
+            onclick="mostrarLogin()"
+            class="btn-ingreso"
+        >
+
+            <i class="fa-regular fa-user"></i>
+
+            Ingreso
+
+        </button>
+
+    </nav>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section id="hero">
+
+        <div class="hero-contenido">
+
+            <a
+                href="#productos"
+                class="cta-button"
+            >
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                Compra ahora
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CARRUSEL PRINCIPAL
+    ====================================================== -->
+
+    <section class="carrusel">
+
+        <div class="carrusel-contenedor">
+
+            <div class="slide activo">
+
+                <img
+                    src="https://aruma.vtexassets.com/assets/vtex.file-manager-graphql/images/ce5a9581-6d7b-4b29-925f-d07bf8a05043___93e0736842583116b9f55739eec9fdba.png"
+                    alt="Promoción de productos Aruma"
+                >
+
+            </div>
+
+
+            <div class="slide">
+
+                <img
+                    src="https://aruma.vtexassets.com/assets/vtex.file-manager-graphql/images/f29b68ab-b703-4dd9-8cf7-d731021f635e___39d93e8b5c6d174808290cd779738b1c.png"
+                    alt="Productos de maquillaje Aruma"
+                >
+
+            </div>
+
+
+            <button
+                class="carrusel-btn anterior"
+                type="button"
+                onclick="cambiarSlide(-1)"
+                aria-label="Imagen anterior"
+            >
+
+                <i class="fa-solid fa-chevron-left"></i>
+
+            </button>
+
+
+            <button
+                class="carrusel-btn siguiente"
+                type="button"
+                onclick="cambiarSlide(1)"
+                aria-label="Imagen siguiente"
+            >
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </div>
+
+
+        <div class="indicadores">
+
+            <button
+                class="punto activo-punto"
+                type="button"
+                onclick="irSlide(0)"
+                aria-label="Ir a imagen 1"
+            ></button>
+
+            <button
+                class="punto"
+                type="button"
+                onclick="irSlide(1)"
+                aria-label="Ir a imagen 2"
+            ></button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MÁS VENDIDO
+    ====================================================== -->
+
+    <section class="mas-vendido">
+
+        <div class="titulo-mas-vendido">
+
+            <span class="etiqueta-mas-vendido">
+
+                <i class="fa-solid fa-fire"></i>
+
+                MÁS VENDIDOS
+
+            </span>
+
+            <h2>
+                Lo más vendido
+            </h2>
+
+            <p>
+                Descubre los productos favoritos de nuestras clientas.
+            </p>
+
+        </div>
+
+
+        <div class="mas-vendido-grid">
+
+
+            <!-- PRODUCTO 1 -->
+
+            <article class="mas-vendido-card">
+
+                <div class="badge-vendido">
+
+                    <i class="fa-solid fa-crown"></i>
+
+                    #1 Más vendido
+
+                </div>
+
+
+                <div class="producto-imagen">
+
+                    <img
+                        src="https://aruma.vtexassets.com/arquivos/ids/214379-1200-auto?v=638954707070930000&width=1200&height=auto&aspect=true"
+                        alt="Dúo de polvos Sheglam Insta-Ready"
+                    >
+
+                </div>
+
+
+                <div class="mas-vendido-info">
+
+                    <span class="marca-producto">
+                        SHEGLAM
+                    </span>
+
+                    <h3>
+                        Dúo de Polvos Sueltos y Compactos Insta-Ready
+                    </h3>
+
+                    <p>
+                        Face & Under Eye Bubblegum Sheglam.
+                    </p>
+
+                    <strong>
+                        S/ 42.90
+                    </strong>
+
+                    <button
+                        type="button"
+                        onclick="agregarCarrito(
+                            'Dúo de Polvos Sueltos y Compactos Insta-Ready',
+                            42.90
+                        )"
+                    >
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Añadir al carrito
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 2 -->
+
+            <article class="mas-vendido-card">
+
+                <div class="badge-vendido">
+
+                    <i class="fa-solid fa-medal"></i>
+
+                    #2 Más vendido
+
+                </div>
+
+
+                <div class="producto-imagen">
+
+                    <img
+                        src="https://aruma.vtexassets.com/arquivos/ids/213846-1200-auto?v=638937131069600000&width=1200&height=auto&aspect=true"
+                        alt="Máscara de pestañas Maybelline Sky High"
+                    >
+
+                </div>
+
+
+                <div class="mas-vendido-info">
+
+                    <span class="marca-producto">
+                        MAYBELLINE
+                    </span>
+
+                    <h3>
+                        Máscara de Pestañas Sky High
+                    </h3>
+
+                    <p>
+                        Maybelline NY Lash Sensational Sky High
+                        a prueba de agua.
+                    </p>
+
+                    <strong>
+                        S/ 64.90
+                    </strong>
+
+                    <button
+                        type="button"
+                        onclick="agregarCarrito(
+                            'Máscara de Pestañas Sky High',
+                            64.90
+                        )"
+                    >
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Añadir al carrito
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 3 -->
+
+            <article class="mas-vendido-card">
+
+                <div class="badge-vendido">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    #3 Más vendido
+
+                </div>
+
+
+                <div class="producto-imagen">
+
+                    <img
+                        src="https://aruma.vtexassets.com/arquivos/ids/182503-1200-auto?v=638134604353270000&width=1200&height=auto&aspect=true"
+                        alt="Tratamiento Lanosterin Thermic"
+                    >
+
+                </div>
+
+
+                <div class="mas-vendido-info">
+
+                    <span class="marca-producto">
+                        LANOSTERIN
+                    </span>
+
+                    <h3>
+                        Tratamiento Lanosterin Thermic
+                    </h3>
+
+                    <p>
+                        Tratamiento para el cuidado del cabello
+                        Lanosterin 110 ml.
+                    </p>
+
+                    <strong>
+                        S/ 32.90
+                    </strong>
+
+                    <button
+                        type="button"
+                        onclick="agregarCarrito(
+                            'Tratamiento Lanosterin Thermic',
+                            32.90
+                        )"
+                    >
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Añadir al carrito
+
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PRODUCTOS
+    ====================================================== -->
+
+    <section
+        class="productos-seccion"
+        id="productos"
+    >
+
+        <div class="titulo-productos">
+
+            <span class="titulo-decoracion">
+
+                <i class="fa-solid fa-sparkles"></i>
+
+            </span>
+
+            <h1>
+                Nuestros productos
+            </h1>
+
+            <p>
+                Encuentra tus favoritos de belleza y cuidado personal.
+            </p>
+
+        </div>
+
+
+        <!-- BUSCADOR -->
+
+        <div class="buscador">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="buscadorProducto"
+                placeholder="Buscar producto..."
+                onkeyup="buscarProducto()"
+                aria-label="Buscar producto"
+            >
+
+            <i class="fa-solid fa-wand-magic-sparkles buscador-decoracion"></i>
+
+        </div>
+
+
+        <!-- CARRITO -->
+
+        <div class="carrito-indicador">
+
+            <button
+                type="button"
+                onclick="mostrarCarrito()"
+            >
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                Mi carrito
+
+                <span id="contadorCarrito">
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             GRID DE PRODUCTOS
+        ================================================== -->
+
+        <div class="productos">
+
+
+            <!-- PRODUCTO 1 -->
+
+            <article
+                class="producto-card"
+                data-nombre="Labial Líquido Mate"
+                data-precio="29.90"
+            >
+
+                <div class="producto-card-imagen">
+
+                    <img
+                        src="https://aruma.vtexassets.com/arquivos/ids/208722-1200-auto?v=638863783793800000&width=1200&height=auto&aspect=true"
+                        alt="Labial Líquido Mate"
+                    >
+
+                </div>
+
+
+                <div class="producto-text">
+
+                    <span class="mini-etiqueta">
+                        MAQUILLAJE
+                    </span>
+
+                    <h2>
+                        Labial Líquido Mate
+                    </h2>
+
+                    <p class="descripcion-producto">
+                        Acabado mate y color intenso para tus labios.
+                    </p>
+
+                    <p class="precio">
+                        S/ 29.90
+                    </p>
+
+                    <button
+                        class="ver-producto"
+                        type="button"
+                        onclick="irProductos()"
+                    >
+
+                        <i class="fa-regular fa-eye"></i>
+
+                        Ver producto
+
+                    </button>
+
+                    <button
+                        class="carrito-btn"
+                        type="button"
+                        onclick="agregarCarrito(
+                            'Labial Líquido Mate',
+                            29.90
+                        )"
+                    >
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Añadir al carrito
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 2 -->
+
+            <article
+                class="producto-card"
+                data-nombre="Labial Matte Intense"
+                data-precio="34.90"
+            >
+
+                <div class="producto-card-imagen">
+
+                    <img
+                        src="https://aruma.vtexassets.com/arquivos/ids/214852-1200-auto?v=638960465574500000&width=1200&height=auto&aspect=true"
+                        alt="Labial Matte Intense"
+                    >
+
+                </div>
+
+
+                <div class="producto-text">
+
+                    <span class="mini-etiqueta">
+                        MAQUILLAJE
+                    </span>
+
+                    <h2>
+                        Labial Matte Intense
+                    </h2>
+
+                    <p class="descripcion-producto">
+                        Color intenso con un acabado elegante.
+                    </p>
+
+                    <p class="precio">
+                        S/ 34.90
+                    </p>
+
+                    <button
+                        class="ver-producto"
+                        type="button"
+                        onclick="irProductos()"
+                    >
+
+                        <i class="fa-regular fa-eye"></i>
+
+                        Ver producto
+
+                    </button>
+
+                    <button
+                        class="carrito-btn"
+                        type="button"
+                        onclick="agregarCarrito(
+                            'Labial Matte Intense',
+                            34.90
+                        )"
+                    >
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Añadir al carrito
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 3 -->
+
+            <article
+                class="producto-card"
+                data-nombre="Labial Velvet Rosa"
+                data-precio="32.90"
+            >
+
+                <div class="producto-card-imagen">
+
+                    <img
+                        src="https://aruma.vtexassets.com/arquivos/ids/220234-1200-auto?v=639069299161800000&width=1200&height=auto&aspect=true"
+                        alt="Labial Velvet Rosa"
+                    >
+
+                </div>
+
+
+                <div class="producto-text">
+
+                    <span class="mini-etiqueta">
+                        LABIOS
+                    </span>
+
+                    <h2>
+                        Labial Velvet Rosa
+                    </h2>
+
+                    <p class="descripcion-producto">
+                        Tono rosa suave con acabado aterciopelado.
+                    </p>
+
+                    <p class="precio">
+                        S/ 32.90
+                    </p>
+
+                    <button
+                        class="ver-producto"
+                        type="button"
+                        onclick="irProductos()"
+                    >
+
+                        <i class="fa-regular fa-eye"></i>
+
+                        Ver producto
+
+                    </button>
+
+                    <button
+                        class="carrito-btn"
+                        type="button"
+                        onclick="agregarCarrito(
+                            'Labial Velvet Rosa',
+                            32.90
+                        )"
+                    >
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Añadir al carrito
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 4 -->
+
+            <article
+                class="producto-card"
+                data-nombre="Labial Creamy Nude"
+                data-precio="27.90"
+            >
+
+                <div class="producto-card-imagen">
+
+                    <img
+                        src="https://aruma.vtexassets.com/arquivos/ids/199509-1200-auto?v=638622320471630000&width=1200&height=auto&aspect=true"
+                        alt="Labial Creamy Nude"
+                    >
+
+                </div>
+
+
+                <div class="producto-text">
+
+                    <span class="mini-etiqueta">
+                        LABIOS
+                    </span>
+
+                    <h2>
+                        Labial Creamy Nude
+                    </h2>
+
+                    <p class="descripcion-producto">
+                        Un tono nude suave para cualquier ocasión.
+                    </p>
+
+                    <p class="precio">
+                        S/ 27.90
+                    </p>
+
+                    <button
+                        class="ver-producto"
+                        type="button"
+                        onclick="irProductos()"
+                    >
+
+                        <i class="fa-regular fa-eye"></i>
+
+                        Ver producto
+
+                    </button>
+
+                    <button
+                        class="carrito-btn"
+                        type="button"
+                        onclick="agregarCarrito(
+                            'Labial Creamy Nude',
+                            27.90
+                        )"
+                    >
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Añadir al carrito
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 5 -->
+
+            <article
+                class="producto-card"
+                data-nombre="Labial Color Trend"
+                data-precio="25.90"
+            >
+
+                <div class="producto-card-imagen">
+
+                    <img
+                        src="https://aruma.vtexassets.com/arquivos/ids/220468-1200-auto?v=639071113406400000&width=1200&height=auto&aspect=true"
+                        alt="Labial Color Trend"
+                    >
+
+                </div>
+
+
+                <div class="producto-text">
+
+                    <span class="mini-etiqueta">
+                        MAQUILLAJE
+                    </span>
+
+                    <h2>
+                        Labial Color Trend
+                    </h2>
+
+                    <p class="descripcion-producto">
+                        Color moderno y acabado cómodo para tus labios.
+                    </p>
+
+                    <p class="precio">
+                        S/ 25.90
+                    </p>
+
+                    <button
+                        class="ver-producto"
+                        type="button"
+                        onclick="irProductos()"
+                    >
+
+                        <i class="fa-regular fa-eye"></i>
+
+                        Ver producto
+
+                    </button>
+
+                    <button
+                        class="carrito-btn"
+                        type="button"
+                        onclick="agregarCarrito(
+                            'Labial Color Trend',
+                            25.90
+                        )"
+                    >
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Añadir al carrito
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 6 -->
+
+            <article
+                class="producto-card"
+                data-nombre="Lip Gloss"
+                data-precio="24.90"
+            >
+
+                <div class="producto-card-imagen">
+
+                    <img
+                        src="https://aruma.vtexassets.com/arquivos/ids/180035-1200-auto?v=638018879841870000&width=1200&height=auto&aspect=true"
+                        alt="Lip Gloss"
+                    >
+
+                </div>
+
+
+                <div class="producto-text">
+
+                    <span class="mini-etiqueta">
+                        LABIOS
+                    </span>
+
+                    <h2>
+                        Lip Gloss
+                    </h2>
+
+                    <p class="descripcion-producto">
+                        Brillo delicado para unos labios luminosos.
+                    </p>
+
+                    <p class="precio">
+                        S/ 24.90
+                    </p>
+
+                    <button
+                        class="ver-producto"
+                        type="button"
+                        onclick="irProductos()"
+                    >
+
+                        <i class="fa-regular fa-eye"></i>
+
+                        Ver producto
+
+                    </button>
+
+                    <button
+                        class="carrito-btn"
+                        type="button"
+                        onclick="agregarCarrito(
+                            'Lip Gloss',
+                            24.90
+                        )"
+                    >
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Añadir al carrito
+
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MARCAS
+    ====================================================== -->
+
+    <section class="marcas-seccion">
+
+        <div class="marcas-titulo">
+
+            <span class="marcas-etiqueta">
+
+                <i class="fa-solid fa-sparkles"></i>
+
+                NUESTRAS MARCAS
+
+            </span>
+
+
+            <h2>
+                Marcas que encuentras en Aruma
+            </h2>
+
+
+            <p>
+                Descubre las marcas que forman parte de nuestra selección.
+            </p>
+
+        </div>
+
+
+        <div class="marcas-carrusel">
+
+            <div class="marcas-track">
+
+
+                <!-- GRUPO 1 -->
+
+                <div class="marca">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0fWN1YP74VXtRnwam1ZOyTIqBI9kYln3Gs4EAVdnrQA&s=10"
+                        alt="Sheglam"
+                    >
+
+                </div>
+
+
+                <div class="marca">
+
+                    <img
+                        src="https://brandlogos.net/wp-content/uploads/2022/04/maybelline-logo-brandlogos.net_-300x300.png"
+                        alt="Maybelline"
+                    >
+
+                </div>
+
+
+                <div class="marca">
+
+                    <img
+                        src="https://www.druni.es/media/catalog/category/logo_Loreal.png"
+                        alt="L'Oréal"
+                    >
+
+                </div>
+
+
+                <div class="marca">
+
+                    <img
+                        src="https://feel22.com/cdn/shop/collections/4ddba36be7e275d904124f897412ec7e.jpg?v=1542034004"
+                        alt="Essence"
+                    >
+
+                </div>
+
+
+                <div class="marca">
+
+                    <img
+                        src="https://images.seeklogo.com/logo-png/33/1/nyx-cosmetics-logo-png_seeklogo-331565.png"
+                        alt="NYX"
+                    >
+
+                </div>
+
+
+                <div class="marca">
+
+                    <img
+                        src="https://cdn.worldvectorlogo.com/logos/revlon-2.svg"
+                        alt="Revlon"
+                    >
+
+                </div>
+
+
+                <!-- GRUPO 2 -->
+
+                <div class="marca">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0fWN1YP74VXtRnwam1ZOyTIqBI9kYln3Gs4EAVdnrQA&s=10"
+                        alt="Sheglam"
+                    >
+
+                </div>
+
+
+                <div class="marca">
+
+                    <img
+                        src="https://brandlogos.net/wp-content/uploads/2022/04/maybelline-logo-brandlogos.net_-300x300.png"
+                        alt="Maybelline"
+                    >
+
+                </div>
+
+
+                <div class="marca">
+
+                    <img
+                        src="https://www.druni.es/media/catalog/category/logo_Loreal.png"
+                        alt="L'Oréal"
+                    >
+
+                </div>
+
+
+                <div class="marca">
+
+                    <img
+                        src="https://skinmiles.com/wp-content/uploads/2023/10/Essence-logo-brand-page-1.jpg"
+                        alt="Essence"
+                    >
+
+                </div>
+
+
+                <div class="marca">
+
+                    <img
+                        src="https://images.seeklogo.com/logo-png/33/1/nyx-cosmetics-logo-png_seeklogo-331565.png"
+                        alt="NYX"
+                    >
+
+                </div>
+
+
+                <div class="marca">
+
+                    <img
+                        src="https://cdn.worldvectorlogo.com/logos/revlon-2.svg"
+                        alt="Revlon"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MODAL CARRITO
+    ====================================================== -->
+
+    <div
+        id="modalCarrito"
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+    >
+
+        <div class="modal-contenido carrito-contenido">
+
+            <button
+                class="cerrar-modal"
+                type="button"
+                onclick="cerrarCarrito()"
+                aria-label="Cerrar carrito"
+            >
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div class="carrito-titulo">
+
+                <div class="carrito-icono">
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        TU COMPRA
+                    </span>
+
+                    <h2>
+                        Mi carrito
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div id="listaCarrito">
+
+                <div class="carrito-vacio">
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                    <p>
+                        Tu carrito está vacío.
+                    </p>
+
+                    <small>
+                        Agrega tus productos favoritos.
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="total-carrito">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="totalCarrito">
+                    S/ 0.00
+                </strong>
+
+            </div>
+
+
+            <button
+                class="finalizar-btn"
+                type="button"
+                onclick="finalizarCompra()"
+            >
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                Finalizar compra
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MENSAJE CARRITO
+    ====================================================== -->
+
+    <div
+        id="mensajeCarrito"
+        class="mensaje-carrito"
+        role="status"
+        aria-live="polite"
+    >
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <span>
+            Producto añadido al carrito
+        </span>
+
+    </div>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <!-- INFORMACIÓN -->
+
+            <div class="footer-column">
+
+                <div class="footer-logo">
+
+                    <i class="fa-solid fa-sparkles"></i>
+
+                    ARUMA
+
+                </div>
+
+
+                <p class="footer-descripcion">
+
+                    Belleza, cuidado y productos
+                    para hacerte sentir increíble.
+
+                </p>
+
+
+                <h3>
+                    INFORMACIÓN
+                </h3>
+
+
+                <a href="somos.html">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    Nosotros
+
+                </a>
+
+
+                <a href="contacto.html">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    Contacto
+
+                </a>
+
+
+                <a href="#">
+
+                    <i class="fa-solid fa-circle-question"></i>
+
+                    Preguntas frecuentes
+
+                </a>
+
+            </div>
+
+
+            <!-- AYUDA -->
+
+            <div class="footer-column">
+
+                <h3>
+                    AYUDA
+                </h3>
+
+
+                <a href="#">
+
+                    <i class="fa-solid fa-truck"></i>
+
+                    Envíos
+
+                </a>
+
+
+                <a href="#">
+
+                    <i class="fa-solid fa-rotate-left"></i>
+
+                    Cambios y devoluciones
+
+                </a>
+
+
+                <a href="#">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    Términos y condiciones
+
+                </a>
+
+
+                <a href="#">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    Privacidad
+
+                </a>
+
+            </div>
+
+
+            <!-- REDES -->
+
+            <div class="footer-column">
+
+                <h3>
+                    SÍGUENOS
+                </h3>
+
+
+                <p class="footer-descripcion">
+
+                    Síguenos y descubre novedades,
+                    consejos y promociones.
+
+                </p>
+
+
+                <div class="social-grid-container">
+
+                    <a
+                        href="#"
+                        class="social-icon"
+                        aria-label="WhatsApp"
+                    >
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="social-icon"
+                        aria-label="Facebook"
+                    >
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="social-icon"
+                        aria-label="Instagram"
+                    >
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="social-icon"
+                        aria-label="TikTok"
+                    >
+
+                        <i class="fa-brands fa-tiktok"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="derechos">
+
+            <span>
+                <i class="fa-regular fa-heart"></i>
+            </span>
+
+            © 2026 Aruma.
+            Todos los derechos reservados.
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+
+        /* =====================================================
+           CARRUSEL PRINCIPAL
+        ====================================================== */
+
+        let indiceActual = 0;
+
+        const slides =
+            document.querySelectorAll(".slide");
+
+        const puntos =
+            document.querySelectorAll(".punto");
+
+
+        function mostrarSlide(indice) {
+
+            if (slides.length === 0) {
+                return;
+            }
+
+
+            if (indice >= slides.length) {
+
+                indiceActual = 0;
+
+            }
+            else if (indice < 0) {
+
+                indiceActual =
+                    slides.length - 1;
+
+            }
+            else {
+
+                indiceActual = indice;
+
+            }
+
+
+            slides.forEach(function(slide) {
+
+                slide.classList.remove("activo");
+
+            });
+
+
+            puntos.forEach(function(punto) {
+
+                punto.classList.remove("activo-punto");
+
+            });
+
+
+            slides[indiceActual]
+                .classList.add("activo");
+
+
+            if (puntos[indiceActual]) {
+
+                puntos[indiceActual]
+                    .classList.add("activo-punto");
+
+            }
+
+        }
+
+
+        function cambiarSlide(direccion) {
+
+            mostrarSlide(
+                indiceActual + direccion
+            );
+
+        }
+
+
+        function irSlide(indice) {
+
+            mostrarSlide(indice);
+
+        }
+
+
+        setInterval(function() {
+
+            cambiarSlide(1);
+
+        }, 5000);
+
+        
+
+
+
+        /* =====================================================
+           MENÚ HAMBURGUESA
+        ====================================================== */
+
+        const botonHamburger =
+            document.querySelector(".hamburger");
+
+        const menu =
+            document.querySelector(".menu");
+
+
+        if (botonHamburger && menu) {
+
+            botonHamburger.addEventListener(
+                "click",
+                function() {
+
+                    const abierto =
+                        menu.classList.toggle("activo");
+
+
+                    botonHamburger.setAttribute(
+                        "aria-expanded",
+                        abierto
+                    );
+
+
+                    const icono =
+                        botonHamburger.querySelector("i");
+
+
+                    if (abierto) {
+
+                        icono.className =
+                            "fa-solid fa-xmark";
+
+                    }
+                    else {
+
+                        icono.className =
+                            "fa-solid fa-bars";
+
+                    }
+
+                }
+            );
+
+
+            document
+                .querySelectorAll(".menu a")
+                .forEach(function(enlace) {
+
+                    enlace.addEventListener(
+                        "click",
+                        function() {
+
+                            menu.classList.remove(
+                                "activo"
+                            );
+
+
+                            botonHamburger.setAttribute(
+                                "aria-expanded",
+                                "false"
+                            );
+
+
+                            botonHamburger
+                                .querySelector("i")
+                                .className =
+                                "fa-solid fa-bars";
+
+                        }
+                    );
+
+                });
+
+        }
+
+
+
+        /* =====================================================
+           CARRITO
+        ====================================================== */
+
+        let carrito = [];
+
+
+        function agregarCarrito(
+            nombre,
+            precio
+        ) {
+
+            carrito.push({
+
+                nombre: nombre,
+
+                precio: Number(precio)
+
+            });
+
+
+            actualizarCarrito();
+
+            mostrarMensaje();
+
+        }
+
+
+        function actualizarCarrito() {
+
+            const contador =
+                document.getElementById(
+                    "contadorCarrito"
+                );
+
+
+            if (contador) {
+
+                contador.textContent =
+                    carrito.length;
+
+            }
+
+
+            mostrarListaCarrito();
+
+        }
+
+
+        function mostrarListaCarrito() {
+
+            const lista =
+                document.getElementById(
+                    "listaCarrito"
+                );
+
+
+            const total =
+                document.getElementById(
+                    "totalCarrito"
+                );
+
+
+            if (!lista || !total) {
+                return;
+            }
+
+
+            lista.innerHTML = "";
+
+
+            if (carrito.length === 0) {
+
+                lista.innerHTML = `
+
+                    <div class="carrito-vacio">
+
+                        <i class="fa-solid fa-bag-shopping"></i>
+
+                        <p>
+                            Tu carrito está vacío.
+                        </p>
+
+                        <small>
+                            Agrega tus productos favoritos.
+                        </small>
+
+                    </div>
+
+                `;
+
+
+                total.textContent =
+                    "S/ 0.00";
+
+
+                return;
+
+            }
+
+
+            let suma = 0;
+
+
+            carrito.forEach(
+                function(producto, indice) {
+
+                    suma += producto.precio;
+
+
+                    const item =
+                        document.createElement("div");
+
+
+                    item.className =
+                        "item-carrito";
+
+
+                    item.innerHTML = `
+
+                        <div class="item-carrito-icono">
+
+                            <i class="fa-solid fa-sparkles"></i>
+
+                        </div>
+
+
+                        <span class="item-carrito-nombre">
+
+                            ${producto.nombre}
+
+                        </span>
+
+
+                        <span class="item-carrito-precio">
+
+                            S/ ${producto.precio.toFixed(2)}
+
+                        </span>
+
+
+                        <button
+                            class="eliminar-item"
+                            type="button"
+                            onclick="eliminarProducto(${indice})"
+                            aria-label="Eliminar producto"
+                        >
+
+                            <i class="fa-solid fa-trash-can"></i>
+
+                        </button>
+
+                    `;
+
+
+                    lista.appendChild(item);
+
+                }
+            );
+
+
+            total.textContent =
+                "S/ " +
+                suma.toFixed(2);
+
+        }
+
+
+        function eliminarProducto(indice) {
+
+            carrito.splice(indice, 1);
+
+            actualizarCarrito();
+
+        }
+
+
+        function mostrarCarrito() {
+
+            const modal =
+                document.getElementById(
+                    "modalCarrito"
+                );
+
+
+            if (modal) {
+
+                modal.classList.add("mostrar");
+
+            }
+
+        }
+
+
+        function cerrarCarrito() {
+
+            const modal =
+                document.getElementById(
+                    "modalCarrito"
+                );
+
+
+            if (modal) {
+
+                modal.classList.remove("mostrar");
+
+            }
+
+        }
+
+
+
+        /* =====================================================
+           VER PRODUCTOS
+        ====================================================== */
+
+        function irProductos() {
+
+            window.location.href =
+                "producto.html";
+
+        }
+
+
+
+        /* =====================================================
+           BUSCADOR
+        ====================================================== */
+
+        function buscarProducto() {
+
+            const input =
+                document.getElementById(
+                    "buscadorProducto"
+                );
+
+
+            if (!input) {
+                return;
+            }
+
+
+            const texto =
+                input.value
+                    .toLowerCase()
+                    .trim();
+
+
+            const productos =
+                document.querySelectorAll(
+                    ".producto-card"
+                );
+
+
+            productos.forEach(
+                function(producto) {
+
+                    const nombre =
+                        producto
+                            .getAttribute("data-nombre")
+                            .toLowerCase();
+
+
+                    if (nombre.includes(texto)) {
+
+                        producto.style.display =
+                            "";
+
+                    }
+                    else {
+
+                        producto.style.display =
+                            "none";
+
+                    }
+
+                }
+            );
+
+        }
+
+
+
+        /* =====================================================
+           MENSAJE CARRITO
+        ====================================================== */
+
+        function mostrarMensaje() {
+
+            const mensaje =
+                document.getElementById(
+                    "mensajeCarrito"
+                );
+
+
+            if (!mensaje) {
+                return;
+            }
+
+
+            mensaje.classList.add("mostrar");
+
+
+            clearTimeout(
+                window.temporizadorMensaje
+            );
+
+
+            window.temporizadorMensaje =
+                setTimeout(function() {
+
+                    mensaje.classList.remove(
+                        "mostrar"
+                    );
+
+                }, 2200);
+
+        }
+
+
+
+        /* =====================================================
+           FINALIZAR COMPRA
+        ====================================================== */
+
+        function finalizarCompra() {
+
+            if (carrito.length === 0) {
+
+                alert(
+                    "Tu carrito está vacío."
+                );
+
+                return;
+
+            }
+
+
+            alert(
+                "¡Gracias por tu compra en Aruma! " +
+                "Esta es una demostración para tu proyecto."
+            );
+
+        }
+
+
+
+        /* =====================================================
+           BOTÓN INGRESO
+        ====================================================== */
+
+        function mostrarLogin() {
+
+            alert(
+                "Función de ingreso próximamente."
+            );
+
+        }
+
+
+
+        /* =====================================================
+           CERRAR MODAL AL HACER CLICK AFUERA
+        ====================================================== */
+
+        window.addEventListener(
+            "click",
+            function(event) {
+
+                const modalCarrito =
+                    document.getElementById(
+                        "modalCarrito"
+                    );
+
+
+                if (
+                    modalCarrito &&
+                    event.target === modalCarrito
+                ) {
+
+                    cerrarCarrito();
+
+                }
+
+            }
+        );
+
+
+
+        /* =====================================================
+           TECLA ESC
+        ====================================================== */
+
+        document.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (event.key === "Escape") {
+
+                    cerrarCarrito();
+
+
+                    if (
+                        menu &&
+                        botonHamburger
+                    ) {
+
+                        menu.classList.remove(
+                            "activo"
+                        );
+
+
+                        botonHamburger.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+
+                        botonHamburger
+                            .querySelector("i")
+                            .className =
+                            "fa-solid fa-bars";
+
+                    }
+
+                }
+
+            }
+        );
+
+    </script>
+
+
+
+</body>
+
+</html>

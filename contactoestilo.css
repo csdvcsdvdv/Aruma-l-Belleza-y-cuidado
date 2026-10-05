@@ -1,0 +1,1018 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+body {
+    background: #fffafd;
+    color: #3b3037;
+}
+
+
+/* =========================
+   ENCABEZADO CONTACTO
+========================= */
+
+.contacto-hero {
+    width: 90%;
+    max-width: 1150px;
+    min-height: 330px;
+    margin: 55px auto 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(219, 30, 121, 0.94),
+            rgba(201, 61, 130, 0.88)
+        );
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 15px 40px rgba(194, 73, 128, 0.15);
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* CÍRCULOS DECORATIVOS */
+
+.contacto-hero::before {
+    content: "";
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    top: -100px;
+    left: -70px;
+}
+
+.contacto-hero::after {
+    content: "";
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    bottom: -150px;
+    right: -80px;
+}
+
+
+/* TEXTO */
+
+.contacto-hero-texto {
+    width: 90%;
+    max-width: 700px;
+    position: relative;
+    z-index: 2;
+}
+
+.contacto-etiqueta {
+    display: inline-block;
+
+    padding: 7px 17px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 30px;
+
+    color: white;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.contacto-hero h1 {
+    color: white;
+
+    font-size: 43px;
+    font-weight: 700;
+
+    margin-bottom: 17px;
+}
+
+.contacto-hero p {
+    color: rgba(255, 255, 255, 0.92);
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   TÍTULOS DE SECCIÓN
+========================= */
+
+.titulo-seccion {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+}
+
+.titulo-seccion > span {
+    display: block;
+
+    color: #db1e79;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.titulo-seccion h2 {
+    color: #3b3037;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+.titulo-seccion p {
+    color: #81747b;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   SECCIÓN AYUDA
+========================= */
+
+.ayuda {
+    width: 90%;
+    max-width: 1150px;
+
+    margin: 0 auto 90px;
+}
+
+.ayuda-contenedor {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* TARJETAS */
+
+.ayuda-card {
+    background: #ffffff;
+
+    border: 1px solid #f3dce8;
+
+    border-radius: 22px;
+
+    padding: 32px 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(194, 73, 128, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.ayuda-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 40px rgba(194, 73, 128, 0.15);
+}
+
+
+/* ICONOS */
+
+.ayuda-icono {
+    width: 68px;
+    height: 68px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff0f7;
+
+    color: #db1e79;
+
+    font-size: 27px;
+
+    transition: 0.3s ease;
+}
+
+.ayuda-card:hover .ayuda-icono {
+    background: #db1e79;
+    color: white;
+
+    transform: scale(1.05);
+}
+
+
+/* TEXTO */
+
+.ayuda-card h3 {
+    color: #3b3037;
+
+    font-size: 18px;
+
+    margin-bottom: 12px;
+}
+
+.ayuda-card p {
+    color: #81747b;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    min-height: 65px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ENLACE */
+
+.ayuda-card > a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    color: #db1e79;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.ayuda-card > a:hover {
+    gap: 12px;
+
+    color: #c93d82;
+}
+
+
+/* =========================
+   SECCIÓN TIENDAS
+========================= */
+
+.tiendas {
+    width: 90%;
+    max-width: 1150px;
+
+    margin: 0 auto 90px;
+}
+
+.tiendas-contenedor {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* TARJETA TIENDA */
+
+.tienda-card {
+    background: white;
+
+    border: 1px solid #f3dce8;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px rgba(194, 73, 128, 0.08);
+
+    transition: 0.3s ease;
+}
+
+.tienda-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 40px rgba(194, 73, 128, 0.15);
+}
+
+
+/* IMAGEN */
+
+.tienda-imagen {
+    width: 100%;
+    height: 220px;
+
+    overflow: hidden;
+}
+
+.tienda-imagen img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.tienda-card:hover .tienda-imagen img {
+    transform: scale(1.05);
+}
+
+
+/* INFORMACIÓN */
+
+.tienda-info {
+    padding: 25px;
+}
+
+.tienda-numero {
+    display: inline-block;
+
+    color: #db1e79;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+}
+
+.tienda-info h3 {
+    color: #3b3037;
+
+    font-size: 19px;
+
+    margin-bottom: 8px;
+}
+
+.tienda-info p {
+    color: #81747b;
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+}
+
+
+/* BOTÓN UBICACIÓN */
+
+.btn-ubicacion {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px 16px;
+
+    background: #fff0f7;
+
+    color: #db1e79;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.btn-ubicacion:hover {
+    background: #db1e79;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   LLAMADA FINAL
+========================= */
+
+.contacto-final {
+    width: 90%;
+    max-width: 1150px;
+
+    margin: 0 auto 90px;
+
+    padding: 45px 55px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f7,
+            #fde3ef
+        );
+
+    border: 1px solid #f3dce8;
+}
+
+.contacto-final-contenido {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 35px;
+}
+
+.contacto-final-contenido > div {
+    max-width: 700px;
+}
+
+.contacto-final span {
+    display: block;
+
+    color: #db1e79;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.contacto-final h2 {
+    color: #3b3037;
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+.contacto-final p {
+    color: #81747b;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* BOTÓN FINAL */
+
+.btn-contacto {
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 13px 23px;
+
+    background: #db1e79;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    box-shadow:
+        0 7px 18px rgba(194, 73, 128, 0.18);
+
+    transition: 0.3s ease;
+}
+
+.btn-contacto:hover {
+    background: #c93d82;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(194, 73, 128, 0.25);
+}
+
+
+/* =========================================================
+   FOOTER
+   Mantiene la misma línea visual de Aruma
+========================================================= */
+
+footer {
+    margin-top: 0;
+
+    background: #3b3037;
+
+    color: white;
+}
+
+.footer-contenedor {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 55px 0 40px;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1.2fr 1fr;
+
+    gap: 45px;
+}
+
+.footer-columna {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.footer-columna h3 {
+    color: white;
+
+    font-size: 16px;
+
+    margin-bottom: 20px;
+}
+
+.footer-columna p {
+    color: #eadde4;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+}
+
+
+/* LOGO FOOTER */
+
+.footer-logo {
+    width: 180px;
+    height: auto;
+
+    margin-bottom: 18px;
+
+    filter: brightness(0) invert(1);
+}
+
+
+/* ENLACES FOOTER */
+
+.footer-columna a {
+    color: #eadde4;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    margin-bottom: 11px;
+
+    transition: 0.3s ease;
+}
+
+.footer-columna a:hover {
+    color: #db1e79;
+
+    padding-left: 5px;
+}
+
+
+/* ICONOS CONTACTO */
+
+.footer-columna p i {
+    color: #db1e79;
+
+    margin-right: 8px;
+}
+
+
+/* REDES */
+
+.redes-sociales {
+    display: flex;
+
+    gap: 12px;
+}
+
+.redes-sociales a {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff0f7;
+
+    color: #db1e79;
+
+    margin: 0;
+    padding: 0;
+
+    transition: 0.3s ease;
+}
+
+.redes-sociales a:hover {
+    background: #db1e79;
+
+    color: white;
+
+    transform: translateY(-4px);
+}
+
+
+/* PARTE INFERIOR */
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.footer-bottom p {
+    color: #d9cbd2;
+
+    font-size: 12px;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .ayuda-contenedor,
+    .tiendas-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 35px;
+    }
+
+    .contacto-final-contenido {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET PEQUEÑA
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .contacto-hero {
+        width: 90%;
+
+        min-height: 300px;
+
+        margin-top: 40px;
+
+        border-radius: 22px;
+    }
+
+    .contacto-hero h1 {
+        font-size: 34px;
+    }
+
+    .contacto-hero p {
+        font-size: 13px;
+    }
+
+
+    .ayuda,
+    .tiendas {
+        width: 88%;
+    }
+
+    .ayuda-contenedor,
+    .tiendas-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+
+    .titulo-seccion h2 {
+        font-size: 26px;
+    }
+
+
+    .contacto-final {
+        width: 88%;
+
+        padding: 35px 25px;
+
+        border-radius: 20px;
+    }
+
+    .contacto-final h2 {
+        font-size: 24px;
+    }
+
+
+    .footer-contenedor {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .footer-columna {
+        align-items: center;
+    }
+
+    .footer-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-columna a:hover {
+        padding-left: 0;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES PEQUEÑOS
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .contacto-hero {
+        min-height: 270px;
+
+        margin-top: 30px;
+    }
+
+    .contacto-hero h1 {
+        font-size: 29px;
+    }
+
+    .contacto-hero p {
+        font-size: 12px;
+    }
+
+
+    .contacto-etiqueta {
+        font-size: 9px;
+
+        padding: 6px 13px;
+    }
+
+
+    .titulo-seccion h2 {
+        font-size: 23px;
+    }
+
+
+    .ayuda-card {
+        padding: 28px 20px;
+    }
+
+
+    .tienda-imagen {
+        height: 200px;
+    }
+
+
+    .contacto-final {
+        padding: 30px 20px;
+    }
+
+    .contacto-final h2 {
+        font-size: 22px;
+    }
+
+}
+
+/* =====================================================
+   RESPONSIVE - FORMULARIO
+   SOLO LOGO + HAMBURGUESA
+===================================================== */
+
+@media (max-width: 700px) {
+
+    /* BARRA DE NAVEGACIÓN */
+
+    nav {
+        width: 100%;
+        min-height: 90px;
+
+        padding: 15px 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+    }
+
+    /* LOGO */
+
+    nav .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: auto;
+    }
+
+    nav .logo img {
+        width: 160px;
+        max-width: 55vw;
+        height: auto;
+
+        display: block;
+    }
+
+    /* OCULTAR ENLACES DE LA BARRA */
+
+    nav .enlaces {
+        display: none !important;
+    }
+
+    /* OCULTAR BOTÓN INGRESO */
+
+    nav > .btn-ingreso {
+        display: none !important;
+    }
+
+    /* =================================================
+       HAMBURGUESA
+    ================================================= */
+
+    .hamburger {
+        display: flex;
+
+        position: fixed;
+
+        top: 18px;
+        left: 15px;
+
+        width: 42px;
+        height: 42px;
+
+        align-items: center;
+        justify-content: center;
+
+        z-index: 9999;
+
+        border: 1px solid rgba(255,255,255,0.6);
+        border-radius: 50%;
+
+        background: white;
+
+        color: #c93d82;
+
+        font-size: 19px;
+
+        cursor: pointer;
+
+        box-shadow:
+            0 5px 18px rgba(100,40,70,0.15);
+    }
+
+    .hamburger:hover {
+        background: #db1e79;
+        color: white;
+
+        transform: scale(1.05);
+    }
+
+    /* =================================================
+       MENÚ HAMBURGUESA
+    ================================================= */
+
+    .menu {
+        position: fixed;
+
+        top: 70px;
+        left: 15px;
+
+        width: 210px;
+        max-width: calc(100vw - 30px);
+
+        z-index: 9998;
+
+        border-radius: 16px;
+
+        background: rgba(255,255,255,0.98);
+
+        box-shadow:
+            0 15px 35px rgba(80,30,55,0.18);
+    }
+
+    .menu a {
+        padding: 14px 18px;
+
+        font-size: 13px;
+    }
+
+}
+
+
+/* =====================================================
+   CELULARES PEQUEÑOS
+===================================================== */
+
+@media (max-width: 400px) {
+
+    nav {
+        min-height: 80px;
+
+        padding: 12px 15px;
+    }
+
+    nav .logo img {
+        width: 140px;
+        max-width: 50vw;
+    }
+
+    .hamburger {
+        top: 14px;
+        left: 10px;
+
+        width: 38px;
+        height: 38px;
+
+        font-size: 17px;
+    }
+
+    .menu {
+        top: 62px;
+        left: 10px;
+
+        width: 190px;
+        max-width: calc(100vw - 20px);
+    }
+
+}

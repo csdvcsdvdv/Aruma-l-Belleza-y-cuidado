@@ -1,0 +1,1499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+}
+
+
+/* =========================
+   CUERPO
+========================= */
+
+body {
+    background-color: #ffffff;
+
+    color: #222222;
+
+    padding-bottom: 50px;
+}
+
+
+/* =========================
+   TÍTULO PRINCIPAL
+========================= */
+
+body > h1 {
+    text-align: center;
+
+    margin-top: 50px;
+    margin-bottom: 12px;
+
+    color: #F00094;
+
+    font-size: 32px;
+
+    font-weight: 700;
+}
+
+
+body > p {
+    text-align: center;
+
+    color: #777777;
+
+    font-size: 14px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+body > form {
+    width: 90%;
+
+    max-width: 950px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   SECCIONES DEL FORMULARIO
+========================= */
+
+body > form fieldset {
+    border: 1px solid #eeeeee;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    background-color: #ffffff;
+
+    box-shadow: 0 5px 18px rgba(240, 0, 148, 0.08);
+}
+
+
+/* =========================
+   TÍTULO DE CADA SECCIÓN
+========================= */
+
+body > form fieldset legend {
+    background-color: #F00094;
+
+    color: #ffffff;
+
+    padding: 9px 20px;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   ETIQUETAS
+========================= */
+
+body > form label {
+    color: #333333;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   TEXTOS DEL FORMULARIO
+========================= */
+
+body > form p {
+    color: #333333;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   CAMPOS DE TEXTO
+========================= */
+
+body > form input[type="text"],
+body > form input[type="email"],
+body > form input[type="tel"],
+body > form input[type="number"],
+body > form input[type="url"],
+body > form input[type="date"],
+body > form input[type="time"],
+body > form select,
+body > form textarea {
+
+    width: 100%;
+
+    padding: 12px 14px;
+
+    margin-top: 8px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 8px;
+
+    background-color: #ffffff;
+
+    color: #333333;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+
+/* =========================
+   CUANDO SE SELECCIONA UN CAMPO
+========================= */
+
+body > form input[type="text"]:focus,
+body > form input[type="email"]:focus,
+body > form input[type="tel"]:focus,
+body > form input[type="number"]:focus,
+body > form input[type="url"]:focus,
+body > form input[type="date"]:focus,
+body > form input[type="time"]:focus,
+body > form select:focus,
+body > form textarea:focus {
+
+    border-color: #F00094;
+
+    box-shadow: 0 0 0 3px rgba(240, 0, 148, 0.10);
+}
+
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+body > form input::placeholder,
+body > form textarea::placeholder {
+
+    color: #aaaaaa;
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+body > form textarea {
+
+    resize: vertical;
+
+    min-height: 120px;
+}
+
+
+/* =========================
+   SELECT
+========================= */
+
+body > form select {
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   RADIO Y CHECKBOX
+========================= */
+
+body > form input[type="radio"],
+body > form input[type="checkbox"] {
+
+    accent-color: #F00094;
+
+    cursor: pointer;
+
+    margin-right: 5px;
+}
+
+
+/* =========================
+   RANGO
+========================= */
+
+body > form input[type="range"] {
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    accent-color: #F00094;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   COLOR
+========================= */
+
+body > form input[type="color"] {
+
+    width: 100%;
+
+    height: 45px;
+
+    margin-top: 8px;
+
+    padding: 3px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 8px;
+
+    background-color: #ffffff;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   ARCHIVO
+========================= */
+
+body > form input[type="file"] {
+
+    width: 100%;
+
+    margin-top: 8px;
+
+    padding: 12px;
+
+    border: 1px dashed #F00094;
+
+    border-radius: 8px;
+
+    background-color: #fff7fc;
+
+    color: #555555;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   PRODUCTO / DATALIST
+========================= */
+
+body > form input[list] {
+
+    width: 100%;
+}
+
+
+/* =========================
+   BOTÓN LIMPIAR
+========================= */
+
+body > form input[type="reset"] {
+
+    padding: 12px 25px;
+
+    background-color: #eeeeee;
+
+    color: #555555;
+
+    border: none;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+body > form input[type="reset"]:hover {
+
+    background-color: #dddddd;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   BOTÓN ENVIAR
+========================= */
+
+body > form input[type="submit"] {
+
+    padding: 12px 30px;
+
+    background-color: #F00094;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-left: 10px;
+
+    box-shadow: 0 4px 12px rgba(240, 0, 148, 0.25);
+
+    transition: 0.3s ease;
+}
+
+
+body > form input[type="submit"]:hover {
+
+    background-color: #D60082;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   EFECTO PARA LOS FIELDSET
+========================= */
+
+body > form fieldset:hover {
+
+    box-shadow: 0 7px 22px rgba(240, 0, 148, 0.12);
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    body > h1 {
+
+        font-size: 26px;
+
+        margin-top: 35px;
+    }
+
+
+    body > p {
+
+        padding: 0 20px;
+
+        line-height: 1.5;
+    }
+
+
+    body > form {
+
+        width: 94%;
+    }
+
+
+    body > form fieldset {
+
+        padding: 20px 15px;
+    }
+
+
+    body > form fieldset legend {
+
+        font-size: 11px;
+
+        padding: 8px 15px;
+    }
+
+
+    body > form input[type="reset"],
+    body > form input[type="submit"] {
+
+        width: 100%;
+
+        margin: 5px 0;
+    }
+
+
+    body > form textarea {
+
+        width: 100%;
+    }
+
+}
+
+/* =====================================================
+   RESPONSIVE COMPLETO
+===================================================== */
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        padding: 18px 4%;
+        min-height: 105px;
+        gap: 15px;
+    }
+
+    nav img {
+        width: 200px;
+        max-width: 25vw;
+    }
+
+    nav .enlaces {
+        gap: 0;
+    }
+
+    nav .enlaces a {
+        padding: 8px 6px;
+        font-size: 10px;
+    }
+
+    nav > button {
+        padding: 9px 15px;
+        font-size: 10px;
+    }
+
+    #hero .cta-button {
+        bottom: 30px;
+    }
+
+    .mas-vendido {
+        padding: 60px 5%;
+    }
+
+    .mas-vendido-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .mas-vendido-card:last-child {
+        grid-column: 1 / -1;
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .productos-seccion {
+        padding: 60px 4vw 75px;
+    }
+
+    .productos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .producto-card,
+    .zapatilla {
+        min-height: 420px;
+    }
+
+    .producto-card-imagen {
+        height: 230px;
+    }
+
+    .footer-container {
+        gap: 30px;
+    }
+}
+
+
+/* =========================
+   TABLET PEQUEÑA
+========================= */
+
+@media (max-width: 850px) {
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px 60px 15px 60px;
+    }
+
+    nav img {
+        width: 180px;
+        max-width: 35vw;
+    }
+
+    nav .enlaces {
+        width: 100%;
+        order: 3;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav .enlaces a {
+        font-size: 9px;
+        padding: 5px 7px;
+    }
+
+    nav > button {
+        padding: 8px 14px;
+    }
+
+    .hamburger {
+        top: 20px;
+        left: 15px;
+    }
+
+    #hero {
+        aspect-ratio: 16 / 5;
+    }
+
+    #hero .cta-button {
+        left: 75%;
+        bottom: 20px;
+        padding: 10px 18px;
+        font-size: 11px;
+    }
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 700px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* NAV */
+
+    nav {
+        width: 100%;
+        min-height: 105px;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 8px;
+
+        padding: 15px 12px;
+    }
+
+    nav img {
+        width: 170px;
+        max-width: 55vw;
+    }
+
+    nav .enlaces {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 2px;
+    }
+
+    nav .enlaces a {
+        padding: 4px 5px;
+
+        font-size: 8px;
+
+        white-space: nowrap;
+    }
+
+    nav > button {
+        display: none;
+    }
+
+
+    /* HAMBURGUESA */
+
+    .hamburger {
+        top: 15px;
+        left: 10px;
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 18px;
+    }
+
+    .menu {
+        top: 63px;
+        left: 10px;
+
+        width: 190px;
+        max-width: calc(100vw - 20px);
+    }
+
+    .menu a {
+        padding: 13px 16px;
+        font-size: 12px;
+    }
+
+
+    /* HERO */
+
+    #hero {
+        width: 100%;
+        max-width: 100%;
+
+        aspect-ratio: 1 / 0.72;
+
+        background-position: center;
+    }
+
+    #hero .cta-button {
+        left: 50%;
+        bottom: 18px;
+
+        padding: 10px 18px;
+
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+
+    /* CARRUSEL */
+
+    .carrusel {
+        padding: 25px 3%;
+    }
+
+    .carrusel-contenedor {
+        width: 100%;
+        aspect-ratio: 3 / 1;
+
+        border-radius: 14px;
+    }
+
+    .carrusel-btn {
+        width: 32px;
+        height: 32px;
+
+        font-size: 13px;
+    }
+
+    .carrusel-btn.anterior {
+        left: 7px;
+    }
+
+    .carrusel-btn.siguiente {
+        right: 7px;
+    }
+
+    .indicadores {
+        margin-top: 12px;
+    }
+
+
+    /* MÁS VENDIDO */
+
+    .mas-vendido {
+        padding: 50px 7% 60px;
+    }
+
+    .titulo-mas-vendido {
+        margin-bottom: 30px;
+    }
+
+    .titulo-mas-vendido h2 {
+        font-size: 25px;
+    }
+
+    .titulo-mas-vendido p {
+        font-size: 11px;
+    }
+
+    .mas-vendido-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .mas-vendido-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .mas-vendido-card img {
+        height: 220px;
+    }
+
+    .mas-vendido-info {
+        padding: 18px;
+    }
+
+
+    /* PRODUCTOS */
+
+    .productos-seccion {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 45px 15px 65px;
+    }
+
+    .titulo-productos {
+        padding: 25px 8px 20px;
+    }
+
+    .titulo-productos h1 {
+        font-size: 25px;
+    }
+
+    .titulo-productos p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .buscador {
+        width: 100%;
+        height: 45px;
+
+        margin: 20px auto;
+
+        padding: 0 15px;
+    }
+
+    .buscador input {
+        font-size: 12px;
+    }
+
+
+    /* CARRITO */
+
+    .carrito-indicador {
+        justify-content: center;
+
+        margin: 15px auto 20px;
+    }
+
+    .carrito-indicador button {
+        padding: 9px 17px;
+        font-size: 11px;
+    }
+
+
+    /* GRID PRODUCTOS */
+
+    .productos {
+        width: 100%;
+        max-width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 20px 0 55px;
+    }
+
+    .producto-card,
+    .zapatilla {
+        width: 100%;
+        min-width: 0;
+
+        min-height: 410px;
+    }
+
+    .producto-card-imagen {
+        height: 240px;
+    }
+
+    .producto-card-imagen img,
+    .producto-card > img,
+    .zapatilla > img {
+        padding: 18px;
+    }
+
+    .producto-text,
+    .zapatilla-text {
+        padding: 16px 17px 18px;
+    }
+
+    .producto-text h2,
+    .zapatilla-text h2 {
+        font-size: 16px;
+    }
+
+    .descripcion-producto {
+        font-size: 12px;
+    }
+
+    .precio {
+        font-size: 17px;
+    }
+
+
+    /* MODALES */
+
+    .modal {
+        padding: 12px;
+    }
+
+    .modal-contenido {
+        width: 100%;
+        max-width: 420px;
+
+        max-height: 90vh;
+
+        padding: 28px 18px;
+
+        border-radius: 20px;
+    }
+
+    .modal-icono {
+        width: 55px;
+        height: 55px;
+
+        margin-bottom: 15px;
+    }
+
+    .modal-contenido h2 {
+        font-size: 21px;
+    }
+
+    .modal-contenido p {
+        font-size: 12px;
+    }
+
+
+    /* CARRITO MODAL */
+
+    .carrito-contenido {
+        width: 100%;
+    }
+
+    .item-carrito {
+        grid-template-columns: 1fr auto;
+
+        gap: 8px;
+
+        padding: 13px 3px;
+    }
+
+    .item-carrito-nombre {
+        font-size: 12px;
+    }
+
+    .item-carrito-precio {
+        grid-column: 2;
+        grid-row: 1;
+
+        font-size: 12px;
+    }
+
+    .eliminar-item {
+        grid-column: 2;
+        grid-row: 2;
+
+        width: 30px;
+        height: 30px;
+    }
+
+    .total-carrito {
+        font-size: 13px;
+    }
+
+    .total-carrito strong {
+        font-size: 18px;
+    }
+
+
+    /* MENSAJE */
+
+    .mensaje-carrito {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+
+        max-width: none;
+
+        justify-content: center;
+
+        padding: 12px 15px;
+
+        text-align: center;
+    }
+
+
+    /* MARCAS */
+
+    .marcas-seccion {
+        padding: 50px 0;
+    }
+
+    .marcas-titulo {
+        margin-bottom: 30px;
+    }
+
+    .marcas-titulo h2 {
+        font-size: 25px;
+    }
+
+    .marcas-titulo p {
+        padding: 0 20px;
+
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .marca {
+        width: 165px;
+        height: 100px;
+
+        margin: 0 8px;
+
+        padding: 13px;
+    }
+
+    .marca img {
+        height: 65px;
+    }
+
+    .marcas-track {
+        animation-duration: 20s;
+    }
+
+    .marcas-carrusel::before,
+    .marcas-carrusel::after {
+        width: 50px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        padding: 40px 20px 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+    }
+
+    .footer-column {
+        text-align: center;
+        align-items: center;
+    }
+
+    .social-grid-container {
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 15px;
+    }
+
+    .derechos {
+        margin-top: 25px;
+
+        font-size: 10px;
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================
+   CELULARES PEQUEÑOS
+========================= */
+
+@media (max-width: 480px) {
+
+    nav {
+        min-height: 100px;
+        padding: 13px 8px;
+    }
+
+    nav img {
+        width: 150px;
+    }
+
+    nav .enlaces {
+        gap: 0;
+    }
+
+    nav .enlaces a {
+        font-size: 7px;
+        padding: 3px 4px;
+    }
+
+    .hamburger {
+        width: 37px;
+        height: 37px;
+
+        top: 12px;
+        left: 8px;
+
+        font-size: 16px;
+    }
+
+    .menu {
+        top: 56px;
+        left: 8px;
+
+        width: 175px;
+        max-width: calc(100vw - 16px);
+    }
+
+
+    /* HERO */
+
+    #hero {
+        aspect-ratio: 1 / 0.75;
+    }
+
+    #hero .cta-button {
+        bottom: 12px;
+
+        padding: 8px 15px;
+
+        font-size: 9px;
+    }
+
+
+    /* CARRUSEL */
+
+    .carrusel {
+        padding: 20px 2%;
+    }
+
+    .carrusel-contenedor {
+        aspect-ratio: 3 / 1;
+        border-radius: 10px;
+    }
+
+    .carrusel-btn {
+        width: 28px;
+        height: 28px;
+
+        font-size: 11px;
+    }
+
+
+    /* MÁS VENDIDO */
+
+    .mas-vendido {
+        padding: 45px 6% 55px;
+    }
+
+    .etiqueta-mas-vendido {
+        padding: 6px 11px;
+        font-size: 8px;
+    }
+
+    .titulo-mas-vendido h2 {
+        font-size: 22px;
+    }
+
+    .titulo-mas-vendido p {
+        font-size: 10px;
+    }
+
+    .mas-vendido-card {
+        border-radius: 18px;
+    }
+
+    .mas-vendido-card img {
+        height: 200px;
+    }
+
+    .mas-vendido-info {
+        padding: 16px;
+    }
+
+    .mas-vendido-info h3 {
+        font-size: 15px;
+    }
+
+    .mas-vendido-info p {
+        font-size: 11px;
+    }
+
+    .mas-vendido-info strong {
+        font-size: 17px;
+    }
+
+
+    /* PRODUCTOS */
+
+    .productos-seccion {
+        padding: 40px 12px 55px;
+    }
+
+    .titulo-productos h1 {
+        font-size: 22px;
+    }
+
+    .titulo-productos p {
+        font-size: 11px;
+    }
+
+    .buscador {
+        height: 43px;
+        font-size: 11px;
+    }
+
+    .productos {
+        gap: 18px;
+    }
+
+    .producto-card,
+    .zapatilla {
+        min-height: 390px;
+        border-radius: 18px;
+    }
+
+    .producto-card-imagen {
+        height: 210px;
+    }
+
+    .producto-card-imagen img,
+    .producto-card > img,
+    .zapatilla > img {
+        height: 100%;
+        padding: 15px;
+    }
+
+    .producto-text,
+    .zapatilla-text {
+        padding: 14px;
+    }
+
+    .producto-text h2,
+    .zapatilla-text h2 {
+        font-size: 15px;
+    }
+
+    .descripcion-producto {
+        font-size: 11px;
+    }
+
+    .precio {
+        font-size: 16px;
+    }
+
+    .ver-producto,
+    .carrito-btn {
+        height: 36px;
+        padding: 8px;
+        font-size: 10px;
+    }
+
+
+    /* MARCAS */
+
+    .marcas-titulo h2 {
+        font-size: 22px;
+    }
+
+    .marcas-titulo p {
+        font-size: 12px;
+    }
+
+    .marca {
+        width: 145px;
+        height: 90px;
+
+        margin: 0 6px;
+    }
+
+    .marca img {
+        height: 58px;
+    }
+
+
+    /* MODAL */
+
+    .modal {
+        padding: 8px;
+    }
+
+    .modal-contenido {
+        padding: 25px 15px;
+        border-radius: 18px;
+    }
+
+    .modal-contenido h2 {
+        font-size: 19px;
+    }
+
+    .modal-contenido p {
+        font-size: 11px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        padding: 35px 15px 18px;
+    }
+
+    .footer-column h3 {
+        font-size: 13px;
+    }
+
+    .footer-column a {
+        font-size: 11px;
+    }
+}
+
+
+/* =========================
+   CELULARES MUY PEQUEÑOS
+========================= */
+
+@media (max-width: 360px) {
+
+    nav img {
+        width: 135px;
+    }
+
+    nav .enlaces a {
+        font-size: 6.5px;
+        padding: 3px;
+    }
+
+    #hero .cta-button {
+        padding: 7px 12px;
+        font-size: 8px;
+    }
+
+    .mas-vendido {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .titulo-mas-vendido h2 {
+        font-size: 20px;
+    }
+
+    .mas-vendido-card img {
+        height: 180px;
+    }
+
+    .productos-seccion {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .producto-card,
+    .zapatilla {
+        min-height: 370px;
+    }
+
+    .producto-card-imagen {
+        height: 190px;
+    }
+
+    .producto-text h2,
+    .zapatilla-text h2 {
+        font-size: 14px;
+    }
+
+    .marca {
+        width: 130px;
+        height: 82px;
+    }
+
+    .marca img {
+        height: 52px;
+    }
+}
+
+/* =====================================================
+   RESPONSIVE - FORMULARIO
+   SOLO LOGO + HAMBURGUESA
+===================================================== */
+
+@media (max-width: 700px) {
+
+    /* BARRA DE NAVEGACIÓN */
+
+    nav {
+        width: 100%;
+        min-height: 90px;
+
+        padding: 15px 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+    }
+
+    /* LOGO */
+
+    nav .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: auto;
+    }
+
+    nav .logo img {
+        width: 160px;
+        max-width: 55vw;
+        height: auto;
+
+        display: block;
+    }
+
+    /* OCULTAR ENLACES DE LA BARRA */
+
+    nav .enlaces {
+        display: none !important;
+    }
+
+    /* OCULTAR BOTÓN INGRESO */
+
+    nav > .btn-ingreso {
+        display: none !important;
+    }
+
+    /* =================================================
+       HAMBURGUESA
+    ================================================= */
+
+    .hamburger {
+        display: flex;
+
+        position: fixed;
+
+        top: 18px;
+        left: 15px;
+
+        width: 42px;
+        height: 42px;
+
+        align-items: center;
+        justify-content: center;
+
+        z-index: 9999;
+
+        border: 1px solid rgba(255,255,255,0.6);
+        border-radius: 50%;
+
+        background: white;
+
+        color: #c93d82;
+
+        font-size: 19px;
+
+        cursor: pointer;
+
+        box-shadow:
+            0 5px 18px rgba(100,40,70,0.15);
+    }
+
+    .hamburger:hover {
+        background: #db1e79;
+        color: white;
+
+        transform: scale(1.05);
+    }
+
+    /* =================================================
+       MENÚ HAMBURGUESA
+    ================================================= */
+
+    .menu {
+        position: fixed;
+
+        top: 70px;
+        left: 15px;
+
+        width: 210px;
+        max-width: calc(100vw - 30px);
+
+        z-index: 9998;
+
+        border-radius: 16px;
+
+        background: rgba(255,255,255,0.98);
+
+        box-shadow:
+            0 15px 35px rgba(80,30,55,0.18);
+    }
+
+    .menu a {
+        padding: 14px 18px;
+
+        font-size: 13px;
+    }
+
+}
+
+
+/* =====================================================
+   CELULARES PEQUEÑOS
+===================================================== */
+
+@media (max-width: 400px) {
+
+    nav {
+        min-height: 80px;
+
+        padding: 12px 15px;
+    }
+
+    nav .logo img {
+        width: 140px;
+        max-width: 50vw;
+    }
+
+    .hamburger {
+        top: 14px;
+        left: 10px;
+
+        width: 38px;
+        height: 38px;
+
+        font-size: 17px;
+    }
+
+    .menu {
+        top: 62px;
+        left: 10px;
+
+        width: 190px;
+        max-width: calc(100vw - 20px);
+    }
+
+}

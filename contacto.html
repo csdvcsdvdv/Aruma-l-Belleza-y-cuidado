@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto - Aruma</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ESTILO GENERAL DE ARUMA -->
+    <link rel="stylesheet" href="menuestilo2.css">
+
+    <!-- ESTILO PROPIO DE CONTACTO -->
+    <link rel="stylesheet" href="contactoestilo.css">
+    <link rel="icon" type="image/x-icon" href="images (2).png">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         BOTÓN HAMBURGUESA
+    ========================= -->
+
+    <button class="hamburger"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+    <!-- =========================
+         MENÚ LATERAL
+    ========================= -->
+
+    <div class="menu">
+
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            Inicio
+        </a>
+
+        <a href="somos.html">
+            <i class="fa-solid fa-heart"></i>
+            Somos
+        </a>
+
+        <a href="producto.html">
+            <i class="fa-solid fa-sparkles"></i>
+            Blog
+        </a>
+
+        <a href="contacto.html">
+            <i class="fa-solid fa-envelope"></i>
+            Contacto
+        </a>
+
+        <a href="formularioaruma.html">
+            <i class="fa-solid fa-clipboard-list"></i>
+            Formulario
+        </a>
+
+    </div>
+
+
+    <!-- =========================
+         BARRA DE NAVEGACIÓN
+    ========================= -->
+
+    <nav>
+
+        <!-- LOGO -->
+
+        <a href="index.html"
+           class="logo"
+           aria-label="Ir al inicio de Aruma">
+
+            <img
+                src="https://images.teamtailor-cdn.com/images/s3/teamtailor-na-maroon/logotype-v3/image_uploads/a67b42d5-8dd8-434e-a010-a06df06e7201/original.png"
+                alt="Logo Aruma">
+
+        </a>
+
+
+        <!-- ENLACES -->
+
+        <div class="enlaces">
+
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Inicio
+            </a>
+
+            <a href="somos.html">
+                <i class="fa-solid fa-heart"></i>
+                Somos
+            </a>
+
+            <a href="producto.html">
+                <i class="fa-solid fa-sparkles"></i>
+                Blog
+            </a>
+
+            <a href="contacto.html">
+                <i class="fa-solid fa-envelope"></i>
+                Contacto
+            </a>
+
+            <a href="formularioaruma.html">
+                <i class="fa-solid fa-clipboard-list"></i>
+                Formulario
+            </a>
+
+        </div>
+
+
+        <!-- INGRESO -->
+
+        <button type="button"
+                onclick="mostrarLogin()"
+                class="btn-ingreso">
+
+            <i class="fa-regular fa-user"></i>
+            Ingreso
+
+        </button>
+
+    </nav>
+
+
+
+    <!-- =========================
+         CONTENIDO PRINCIPAL
+    ========================= -->
+
+    <main>
+
+
+        <!-- =========================
+             ENCABEZADO
+        ========================= -->
+
+        <section class="contacto-hero">
+
+            <div class="contacto-hero-texto">
+
+                <span class="contacto-etiqueta">
+                    CONTACTO
+                </span>
+
+                <h1>
+                    Estamos para ti
+                </h1>
+
+                <p>
+                    Queremos estar más cerca de ti. Conoce nuestras
+                    principales opciones de atención y encuentra
+                    el espacio Aruma más cercano.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             FORMAS DE AYUDA
+        ========================= -->
+
+        <section class="ayuda">
+
+            <div class="titulo-seccion">
+
+                <span>
+                    ATENCIÓN ARUMA
+                </span>
+
+                <h2>
+                    ¿Cómo podemos ayudarte?
+                </h2>
+
+                <p>
+                    Encuentra la opción que necesitas y conoce
+                    cómo podemos acompañarte.
+                </p>
+
+            </div>
+
+
+            <div class="ayuda-contenedor">
+
+
+                <!-- TARJETA 1 -->
+
+                <article class="ayuda-card">
+
+                    <div class="ayuda-icono">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                    </div>
+
+                    <h3>
+                        Atención al cliente
+                    </h3>
+
+                    <p>
+                        Estamos disponibles para orientarte y
+                        ayudarte con tus consultas.
+                    </p>
+
+                    <a href="formularioaruma.html">
+
+                        Solicitar ayuda
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </article>
+
+
+
+                <!-- TARJETA 2 -->
+
+                <article class="ayuda-card">
+
+                    <div class="ayuda-icono">
+
+                        <i class="fa-solid fa-spray-can-sparkles"></i>
+
+                    </div>
+
+                    <h3>
+                        Conoce nuestros productos
+                    </h3>
+
+                    <p>
+                        Descubre nuestra variedad de productos
+                        de belleza y cuidado personal.
+                    </p>
+
+                    <a href="producto.html">
+
+                        Ver productos
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </article>
+
+
+
+                <!-- TARJETA 3 -->
+
+                <article class="ayuda-card">
+
+                    <div class="ayuda-icono">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                    </div>
+
+                    <h3>
+                        Encuentra una tienda
+                    </h3>
+
+                    <p>
+                        Descubre nuestros espacios y encuentra
+                        el establecimiento más cercano.
+                    </p>
+
+                    <a href="#tiendas">
+
+                        Ver tiendas
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             TIENDAS
+        ========================= -->
+
+        <section class="tiendas" id="tiendas">
+
+            <div class="titulo-seccion">
+
+                <span>
+                    NUESTROS ESPACIOS
+                </span>
+
+                <h2>
+                    Encuentra tu Aruma
+                </h2>
+
+                <p>
+                    Visítanos y descubre un espacio pensado para
+                    disfrutar tu experiencia de belleza.
+                </p>
+
+            </div>
+
+
+            <div class="tiendas-contenedor">
+
+
+                <!-- TIENDA 1 -->
+
+                <article class="tienda-card">
+
+                    <div class="tienda-imagen">
+
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTThdaKzwhJiR8fMKuvnszluKGsmwc1PxwopAa8TTwBDtMwODVxzvp5l4un&s=10"
+                            alt="Espacio de belleza Aruma">
+
+                    </div>
+
+                    <div class="tienda-info">
+
+                        <span class="tienda-numero">
+                            01
+                        </span>
+
+                        <h3>
+                            Aruma Miraflores
+                        </h3>
+
+                        <p>
+                            Lima, Perú
+                        </p>
+
+                        <a href="#"
+                           class="btn-ubicacion">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Ver ubicación
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- TIENDA 2 -->
+
+                <article class="tienda-card">
+
+                    <div class="tienda-imagen">
+
+                        <img
+                            src="https://peruretail.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/1750615410776.jpg"
+                            alt="Productos de belleza">
+
+                    </div>
+
+                    <div class="tienda-info">
+
+                        <span class="tienda-numero">
+                            02
+                        </span>
+
+                        <h3>
+                            Aruma Surco
+                        </h3>
+
+                        <p>
+                            Lima, Perú
+                        </p>
+
+                        <a href="#"
+                           class="btn-ubicacion">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Ver ubicación
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- TIENDA 3 -->
+
+                <article class="tienda-card">
+
+                    <div class="tienda-imagen">
+
+                        <img
+                            src="https://jcmagazine.com/wp-content/uploads/2023/03/aruma.jpg"
+                            alt="Productos de maquillaje">
+
+                    </div>
+
+                    <div class="tienda-info">
+
+                        <span class="tienda-numero">
+                            03
+                        </span>
+
+                        <h3>
+                            Aruma San Miguel
+                        </h3>
+
+                        <p>
+                            Lima, Perú
+                        </p>
+
+                        <a href="#"
+                           class="btn-ubicacion">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Ver ubicación
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             LLAMADA AL FORMULARIO
+        ========================= -->
+
+        <section class="contacto-final">
+
+            <div class="contacto-final-contenido">
+
+                <div>
+
+                    <span>
+                        ¿NECESITAS AYUDA?
+                    </span>
+
+                    <h2>
+                        Estamos aquí para escucharte
+                    </h2>
+
+                    <p>
+                        Si tienes alguna consulta, puedes dejarnos
+                        tus datos a través de nuestro formulario.
+                        Estaremos encantados de ayudarte.
+                    </p>
+
+                </div>
+
+
+                <a href="formularioaruma.html"
+                   class="btn-contacto">
+
+                    Ir al formulario
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+
+        <div class="footer-container">
+
+
+            <!-- INFORMACIÓN -->
+
+            <div class="footer-column">
+
+
+                <div class="footer-logo">
+
+                    <i class="fa-solid fa-sparkles"></i>
+
+                    ARUMA
+
+                </div>
+
+
+                <p class="footer-descripcion">
+
+                    Belleza, cuidado y productos
+                    para hacerte sentir increíble.
+
+                </p>
+
+
+                <h3>
+
+                    INFORMACIÓN
+
+                </h3>
+
+
+                <a href="somos.html">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    Nosotros
+
+                </a>
+
+
+                <a href="contacto.html">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    Contacto
+
+                </a>
+
+
+                <a href="#">
+
+                    <i class="fa-solid fa-circle-question"></i>
+
+                    Preguntas frecuentes
+
+                </a>
+
+            </div>
+
+
+
+            <!-- AYUDA -->
+
+            <div class="footer-column">
+
+
+                <h3>
+
+                    AYUDA
+
+                </h3>
+
+
+                <a href="#">
+
+                    <i class="fa-solid fa-truck"></i>
+
+                    Envíos
+
+                </a>
+
+
+                <a href="#">
+
+                    <i class="fa-solid fa-rotate-left"></i>
+
+                    Cambios y devoluciones
+
+                </a>
+
+
+                <a href="#">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    Términos y condiciones
+
+                </a>
+
+
+                <a href="#">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    Privacidad
+
+                </a>
+
+            </div>
+
+
+
+            <!-- REDES -->
+
+            <div class="footer-column">
+
+
+                <h3>
+
+                    SÍGUENOS
+
+                </h3>
+
+
+                <p class="footer-descripcion">
+
+                    Síguenos y descubre novedades,
+                    consejos y promociones.
+
+                </p>
+
+
+                <div class="social-grid-container">
+
+
+                    <a
+                        href="#"
+                        class="social-icon"
+                        aria-label="WhatsApp"
+                    >
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="social-icon"
+                        aria-label="Facebook"
+                    >
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="social-icon"
+                        aria-label="Instagram"
+                    >
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="social-icon"
+                        aria-label="TikTok"
+                    >
+
+                        <i class="fa-brands fa-tiktok"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="derechos">
+
+            <span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </span>
+
+
+            © 2026 Aruma.
+            Todos los derechos reservados.
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+
+    <script>
+
+        /* =========================
+           MENÚ HAMBURGUESA
+        ========================= */
+
+        const botonHamburger =
+            document.querySelector(".hamburger");
+
+        const menu =
+            document.querySelector(".menu");
+
+
+        if (botonHamburger && menu) {
+
+            botonHamburger.addEventListener("click", function () {
+
+                const abierto =
+                    menu.classList.toggle("activo");
+
+                botonHamburger.setAttribute(
+                    "aria-expanded",
+                    abierto
+                );
+
+                const icono =
+                    botonHamburger.querySelector("i");
+
+
+                if (abierto) {
+
+                    icono.className =
+                        "fa-solid fa-xmark";
+
+                } else {
+
+                    icono.className =
+                        "fa-solid fa-bars";
+
+                }
+
+            });
+
+
+            /* CERRAR MENÚ AL SELECCIONAR UNA OPCIÓN */
+
+            document
+                .querySelectorAll(".menu a")
+                .forEach(function (enlace) {
+
+                    enlace.addEventListener("click", function () {
+
+                        menu.classList.remove("activo");
+
+                        botonHamburger.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+                        botonHamburger.querySelector("i").className =
+                            "fa-solid fa-bars";
+
+                    });
+
+                });
+
+        }
+
+
+        /* =========================
+           BOTÓN INGRESO
+        ========================= */
+
+        function mostrarLogin() {
+
+            alert("Función de ingreso próximamente.");
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
+```
